@@ -1,0 +1,19 @@
+{
+  "name": "ntproject",
+  "version": "1.0.0",
+  "description": "FE Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maci-kb24/ntproject.git"
+  },
+  "author": "Marjan Stojanovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maci-kb24/ntproject/issues"
+  },
+  "homepage": "https://github.com/maci-kb24/ntproject#readme"
+}
