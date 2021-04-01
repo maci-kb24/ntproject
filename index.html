@@ -6,62 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="index.html" target="_blank">
     <title>NTProject</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/public/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/normalize.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-              <span class="navbar-brand mb-0 h1">NTPROJECT</span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Pradžia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pasiūlymai</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Naujienos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">kontaktai</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <nav id="menu">
+          <a href="index.html" class="logo">ntproject</a>
+          <ul class="menu-links">
+            <li><a href="#">Pradžia</a></li>
+            <li><a href="">Pasiūlymai</a></li>
+            <li><a href="">Naujienos</a></li>
+            <li><a href="">Kontaktai</a></li>
+          </ul>
+        </nav>
     </header>
-    <main role="main" class="main-content">
-      <section class="hero container">
-        <h1>Lorem ipsum dore</h1>
+    <main class="main">
+      <section class="hero">
+        <h1>Lorem ipsum dolor<br> sit amet conset</h1>
+        <div class="carousel-cards">
+          <span class="material-icons" style="font-size:32px;">
+            arrow_back
+            </span>
+          <div class="card">
+            <img src="public/assets/images/6a483f786d7f370803dd269515981284" alt="" width="100">
+            <h2>lorem ipsum dolor<br>sit amet</h2>
+            <p>amet, consectetur adipiscing elit. Duis magna turpis, ultrices eu ornare eget,</p>
+            <span class="material-icons">arrow_forward</span>
+          </div>
+          <div class="card">
+            <img src="public/assets/images/6a483f786d7f370803dd269515981284" alt="" width="100">
+            <h2>lorem ipsum dolor<br>sit amet</h2>
+            <p>amet, consectetur adipiscing elit. Duis magna turpis, ultrices eu ornare eget,</p>
+            <span class="material-icons">arrow_forward</span>
+          </div>          
+          <div class="card">
+            <img src="public/assets/images/6a483f786d7f370803dd269515981284" alt="" width="100">
+            <h2>lorem ipsum dolor<br>sit amet</h2>
+            <p>amet, consectetur adipiscing elit. Duis magna turpis, ultrices eu ornare eget,</p>
+            <span class="material-icons">arrow_forward</span>
+          </div>     
+          <span class="material-icons" style="font-size:32px;">
+            arrow_forward
+          </span>     
+        </div>
+             
+      </section>
+      <section class="contact">
       </section>
     </main>
-    <footer class="footer ">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <h2>apie statuy</h2>
-            <p>Lorem Ipsum</p>
-            <p>Dolor Sit Amet</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h2>Saugumas</h2>
-            <p>Consectetur adipiscing</p>
-            <p>Sed do eiusmod</p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <i class="bi bi-thermometer"></i>
-          </div>
-        </div>
-      </div>
+    <footer id="footer">
     </footer>
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/index.js"></script>
 </body>
 </html>

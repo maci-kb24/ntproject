@@ -4,7 +4,7 @@
   "description": "FE Task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass --watch src/scss -o public/css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/maci-kb24/ntproject#readme",
   "dependencies": {
-    "bootstrap-icons": "^1.4.1"
+    "node-sass": "^5.0.0"
   }
 }
