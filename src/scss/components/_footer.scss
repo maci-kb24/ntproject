@@ -1,0 +1,21 @@
+#footer {
+    display: flex;
+    background-color: #30333C;
+    padding:20px 80px;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    color:#ffffff;
+    .footer-column, .footer-column2 {
+        flex:1 0 auto;
+        & p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .social-links {
+        flex:4 0 auto;
+        text-align: right;
+        i.fab {
+            padding:0px 10px;
+        }
+    }
+}

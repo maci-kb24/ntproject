@@ -1,63 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-html {
-    height:100%;
-    box-sizing: border-box; 
-    font-size:100%;
-    scroll-behavior: smooth;
-}
-body {
-    min-height:100%;
-    margin:0;
-    font-size:16px;
-    background-color: #ffffff;
-    font-family: 'Oswald', sans-serif!important;
-}
-#menu {
-    align-items: center;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 70px;
-    .logo {
-        text-decoration: none;
-        text-transform: uppercase;
-        &:visited {
-            color:#0E0E0E;
-        }
-    }
-    .menu-links {
-        display: flex;
-        list-style-type: none;
-        padding-left:0px;
-        margin:0;
-        li {
-            padding:0px 10px;
-            a {
-                text-decoration: none;
-                &:visited {
-                    color:#0E0E0E;
-                }
-            }
-        }
-    }
-}
-.sticky {
-    position: fixed;
-    top:0;
-    width:100%;
-}
-.main {
-    background-color: lightblue;
-    border-bottom-right-radius: 400px;
-    .hero h1 {
-        padding:60px 0px 0px 60px;
-        margin:0;
-    }
-    .carousel-cards {
-        display: flex;
-    }
-}
+@import 'base';
+@import 'components/header';
+@import 'components/hero-carousel';
+@import 'components/table';
+@import 'components/gallery';
+@import 'components/footer';
+@import 'components/contact';
+
+
+
+
+
+

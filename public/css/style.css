@@ -10,9 +10,8 @@ html {
 
 body {
   min-height: 100%;
-  margin: 0;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: #E6F1FE;
   font-family: "Oswald", sans-serif !important; }
 
 #menu {
@@ -20,6 +19,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 70px; }
   #menu .logo {
     text-decoration: none;
@@ -44,10 +44,105 @@ body {
   width: 100%; }
 
 .main {
-  background-color: lightblue;
   border-bottom-right-radius: 400px; }
+  .main .hero {
+    background-color: lightblue; }
   .main .hero h1 {
     padding: 60px 0px 0px 60px;
     margin: 0; }
   .main .carousel-cards {
     display: flex; }
+
+#table div h1 {
+  margin-left: 40px; }
+
+.table {
+  border-collapse: collapse;
+  width: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 12px 0px rgba(138, 134, 134, 0.75); }
+  .table th, .table td {
+    padding: 20px 30px; }
+  .table thead tr th {
+    background-color: #36304A;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: unset;
+    text-align: left;
+    line-height: 1.2; }
+  .table thead th:nth-child(1), .table thead th:nth-child(2), .table thead th:nth-child(3), .table thead th:nth-child(4), .table thead th:nth-child(5), .table thead th:nth-child(6) {
+    width: 16%; }
+  .table tbody tr td {
+    color: gray;
+    font-size: 15px;
+    font-weight: unset;
+    line-height: 1.2; }
+  .table tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5; }
+
+#gallery {
+  padding: 0px 40px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px; }
+  #gallery figure {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    #gallery figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #gallery figure figcaption {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      width: 100%;
+      color: #ffffff;
+      font-size: 23px; }
+
+#footer {
+  display: flex;
+  background-color: #30333C;
+  padding: 20px 80px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  color: #ffffff; }
+  #footer .footer-column, #footer .footer-column2 {
+    flex: 1 0 auto; }
+    #footer .footer-column p:last-child, #footer .footer-column2 p:last-child {
+      margin-bottom: 0; }
+  #footer .social-links {
+    flex: 4 0 auto;
+    text-align: right; }
+    #footer .social-links i.fab {
+      padding: 0px 10px; }
+
+#contact {
+  margin: 60px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "contact-info contact-form"; }
+  #contact .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "avatar avatar-info" "avatar avatar-info" "avatar avatar-info";
+    grid-area: contact-info; }
+    #contact .contact-info .avatar-img {
+      width: 100%;
+      height: 75%;
+      border-radius: 50%;
+      max-width: 100px; }
+  #contact .form {
+    background-color: #ffffff; }
