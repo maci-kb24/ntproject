@@ -1,28 +1,27 @@
 #menu {
-    align-items: center;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 70px;
+    flex-direction: column;
     .logo {
         text-decoration: none;
         text-transform: uppercase;
+        font-size: 24px;
         &:visited {
-            color:#0E0E0E;
+            color:#40403c;
         }
     }
     .menu-links {
         display: flex;
         list-style-type: none;
         padding-left:0px;
-        margin:0;
+        flex-direction: column;
         li {
-            padding:0px 10px;
+            padding:0px 0px 20px 0px;
             a {
                 text-decoration: none;
                 &:visited {
-                    color:#0E0E0E;
+                    color:#61636a;
                 }
             }
         }
@@ -32,4 +31,19 @@
     position: fixed;
     top:0;
     width:100%;
+    z-index:1;
+}
+
+@media (min-width:650px) {
+    #menu {
+        flex-direction: row;
+        padding: 20px 80px 20px 80px;
+        align-items: center;
+        .menu-links {
+            flex-direction: row;
+            li {
+                padding:0px 10px 0px 0px;
+            }
+        }
+    }
 }

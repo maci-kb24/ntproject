@@ -1,21 +1,38 @@
 #footer {
     display: flex;
-    background-color: #30333C;
-    padding:20px 80px;
-    align-items:flex-end;
+    background-color: #30333c;
+    padding:20px 80px 40px 80px;
+    flex-direction: column;
+    align-items:flex-start;
     flex-wrap: wrap;
     color:#ffffff;
     .footer-column, .footer-column2 {
         flex:1 0 auto;
+        margin-top: 30px;
         & p:last-child {
             margin-bottom: 0;
         }
     }
     .social-links {
         flex:4 0 auto;
-        text-align: right;
+        text-align: left;
+        margin-top: 30px;
         i.fab {
-            padding:0px 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media (min-width:600px) {
+    #footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        .social-links {
+            text-align: right;
+            i.fab {
+                padding:0px 10px;
+            }
         }
     }
 }
