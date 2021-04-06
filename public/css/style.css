@@ -105,7 +105,9 @@ body {
 
 @media (max-width: 650px) {
   .main #hero h1 {
-    padding-top: 240px; } }
+    padding-top: 240px; }
+  .main #hero .carousel-cards .card {
+    margin-left: 10px; } }
 
 #table {
   margin-top: 100px; }
@@ -135,8 +137,10 @@ body {
           min-width: 160px;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1; }
-          #table .table thead .header-row .header-column .dropdown-content .show {
-            display: block; }
+          #table .table thead .header-row .header-column .dropdown-content .link {
+            text-decoration: none;
+            color: #3F405A;
+            padding: 8px; }
         #table .table thead .header-row .header-column .header-btn {
           background-color: #a7c0e8;
           border: none;
@@ -171,15 +175,12 @@ body {
       display: block;
       float: left; }
       table thead tr {
-        display: block;
-        position: absolute;
-        top: -9999px;
-        left: -9999px; }
+        display: block; }
         table thead tr:first-child {
           display: none; }
-          table thead tr:first-child:last-child th {
-            display: block;
-            text-align: right; }
+        table thead tr:last-child th {
+          display: block;
+          text-align: right; }
     table tbody {
       display: block;
       width: auto;

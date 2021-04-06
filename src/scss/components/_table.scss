@@ -29,8 +29,10 @@
                     min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
-                    .show {
-                        display: block;
+                    .link {
+                        text-decoration: none;
+                        color:#3F405A;
+                        padding:8px;
                     }
                 }
                 .header-btn {
@@ -81,15 +83,15 @@
         float:left;
         tr {
             display: block;
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
+            // position: absolute;
+            // top: -9999px;
+            // left: -9999px;
             &:first-child {
                 display: none;
+                }
             &:last-child th {
                 display: block;
                 text-align: right;
-                    }
                 }
             }
         }

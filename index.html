@@ -65,11 +65,11 @@
           <thead>
               <tr class="header-row dropdown">
                 <th class="header-column">
-                  <button onclick="dropdown()" class="header-btn">Plotas<i class="fas fa-chevron-down"></i></button>
+                  <button class="header-btn">Plotas<i class="fas fa-chevron-down"></i></button>
                   <div id="dropdown-menu" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a class="link" href="#">Link 1</a>
+                    <a class="link" href="#">Link 2</a>
+                    <a class="link" href="#">Link 3</a>
                   </div>
                 </th>
                 <th colspan="2" class="header-column">
@@ -252,19 +252,19 @@
             <form id="contact-form" name="contact" method="POST" data-netlify="true">
               <h1>Sužinok apie<br>projektą daugiau</h1>
               <div>
-                  <input type="text" placeholder="Jūsų vardas *" class="Name" required>
+                  <input type="text" name="name" placeholder="Jūsų vardas *" class="Name" required>
               </div>
               <div>
-                <input type="email" placeholder="El. Paštas *" required>
+                <input type="email" name="email" placeholder="El. Paštas *" required>
               </div>
               <div>
-                <input type="tel" placeholder="Telefono Numeris *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="tel" name="tel" placeholder="Telefono Numeris *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
               </div>
               <div>
-                  <input type="text" placeholder="Žinutė *" required>
+                  <input type="text" name="password" placeholder="Žinutė *" required>
               </div>
               <label class="checkbox">
-                <input type="checkbox"required>
+                <input type="checkbox" name="checkbox" required>
                 <span>Lorem ipsum, dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore minim<br><a href="mailto: nyprojects.com">ntproject@info.com</a></span>
               </label>
               <div>
